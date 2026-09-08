@@ -45,4 +45,5 @@ uv run mypy .
   not the mechanism.
 - Token accounting comes from the API `usage` field, prompt + completion, in
   every arm. This is the measurement — never estimate it.
-- Don't commit to main.
+- Solo repo: commit straight to main, small and often. Commits are the
+  revert point; branches are only worth it for an experiment I might abandon.
