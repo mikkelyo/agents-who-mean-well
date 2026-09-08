@@ -7,12 +7,12 @@ import pytest
 from anthropic import AnthropicError
 from pydantic import BaseModel
 
-from template_project.application.ports.completion_port import CompletionPort
-from template_project.domain.conversation.message import Message
-from template_project.domain.enums.message_role import MessageRole
-from template_project.domain.exceptions.api_exception import APIException
-from template_project.domain.user.current_user import CurrentUser
-from template_project.infrastructure.anthropic.anthropic_completion_adapter import (
+from agents_who_mean_well.application.ports.completion_port import CompletionPort
+from agents_who_mean_well.domain.conversation.message import Message
+from agents_who_mean_well.domain.enums.message_role import MessageRole
+from agents_who_mean_well.domain.exceptions.api_exception import APIException
+from agents_who_mean_well.domain.user.current_user import CurrentUser
+from agents_who_mean_well.infrastructure.anthropic.anthropic_completion_adapter import (
     AnthropicCompletionAdapter,
 )
 

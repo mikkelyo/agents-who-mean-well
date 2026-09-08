@@ -8,18 +8,18 @@ re-validated through Pydantic so every layer reads typed config objects.
 from dynaconf import Dynaconf
 from pydantic import BaseModel, Field
 
-from template_project.application.configurations.completion_config import (
+from agents_who_mean_well.application.configurations.completion_config import (
     CompletionConfig,
 )
-from template_project.domain.enums.environment import Environment
-from template_project.infrastructure.configurations.anthropic_config import (
+from agents_who_mean_well.domain.enums.environment import Environment
+from agents_who_mean_well.infrastructure.configurations.anthropic_config import (
     AnthropicConfig,
 )
-from template_project.infrastructure.configurations.example_api_config import (
+from agents_who_mean_well.infrastructure.configurations.example_api_config import (
     ExampleApiConfig,
 )
-from template_project.infrastructure.configurations.metrics_config import MetricsConfig
-from template_project.infrastructure.configurations.security_config import (
+from agents_who_mean_well.infrastructure.configurations.metrics_config import MetricsConfig
+from agents_who_mean_well.infrastructure.configurations.security_config import (
     SecurityConfig,
 )
 

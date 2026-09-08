@@ -4,14 +4,14 @@ from unittest.mock import MagicMock
 
 import pytest
 
-from template_project.application.ports.current_user_port import CurrentUserPort
-from template_project.constants.context_keys import ContextKeys
-from template_project.context import context
-from template_project.domain.exceptions.authentication_exception import (
+from agents_who_mean_well.application.ports.current_user_port import CurrentUserPort
+from agents_who_mean_well.constants.context_keys import ContextKeys
+from agents_who_mean_well.context import context
+from agents_who_mean_well.domain.exceptions.authentication_exception import (
     AuthenticationException,
 )
-from template_project.domain.user.current_user import CurrentUser
-from template_project.presentation.user.context_var_current_user_adapter import (
+from agents_who_mean_well.domain.user.current_user import CurrentUser
+from agents_who_mean_well.presentation.user.context_var_current_user_adapter import (
     ContextVarCurrentUserAdapter,
 )
 

@@ -842,7 +842,7 @@ wheels = [
 ]
 
 [[package]]
-name = "template-project"
+name = "agents_who_mean_well"
 version = "1.0.0"
 source = { editable = "." }
 dependencies = [

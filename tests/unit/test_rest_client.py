@@ -3,7 +3,7 @@
 import httpx
 import pytest
 
-from template_project.infrastructure.clients.base.rest_client import RestClient
+from agents_who_mean_well.infrastructure.clients.base.rest_client import RestClient
 
 
 def _client(handler) -> RestClient:

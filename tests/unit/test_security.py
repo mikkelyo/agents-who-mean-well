@@ -4,8 +4,8 @@ import pytest
 from fastapi import FastAPI
 from fastapi.testclient import TestClient
 
-from template_project.presentation.api.security import AUTH_AND_CONTEXT, AUTH_ONLY
-from template_project.presentation.api.v1.exception_handlers import (
+from agents_who_mean_well.presentation.api.security import AUTH_AND_CONTEXT, AUTH_ONLY
+from agents_who_mean_well.presentation.api.v1.exception_handlers import (
     register_exception_handlers,
 )
 

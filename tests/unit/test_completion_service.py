@@ -4,10 +4,10 @@ from unittest.mock import AsyncMock, MagicMock
 
 import pytest
 
-from template_project.application.completion_service import CompletionService
-from template_project.domain.enums.message_role import MessageRole
-from template_project.domain.exceptions.validation_exception import ValidationException
-from template_project.domain.user.current_user import CurrentUser
+from agents_who_mean_well.application.completion_service import CompletionService
+from agents_who_mean_well.domain.enums.message_role import MessageRole
+from agents_who_mean_well.domain.exceptions.validation_exception import ValidationException
+from agents_who_mean_well.domain.user.current_user import CurrentUser
 
 
 @pytest.fixture

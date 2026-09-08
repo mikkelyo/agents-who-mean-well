@@ -13,7 +13,7 @@
     "max_retries": 2
   },
   "metrics_config": {
-    "namespace": "{env_name}.template_project",
+    "namespace": "{env_name}.agents_who_mean_well",
     "enabled": true
   },
   "security_config": {

@@ -2,19 +2,19 @@
 
 from anthropic import AsyncAnthropic
 
-from template_project.application.completion_service import CompletionService
-from template_project.application.ports.completion_port import CompletionPort
-from template_project.application.ports.current_user_port import CurrentUserPort
-from template_project.application.ports.metrics_port import MetricsPort
-from template_project.di_container import container
-from template_project.infrastructure.anthropic.anthropic_completion_adapter import (
+from agents_who_mean_well.application.completion_service import CompletionService
+from agents_who_mean_well.application.ports.completion_port import CompletionPort
+from agents_who_mean_well.application.ports.current_user_port import CurrentUserPort
+from agents_who_mean_well.application.ports.metrics_port import MetricsPort
+from agents_who_mean_well.di_container import container
+from agents_who_mean_well.infrastructure.anthropic.anthropic_completion_adapter import (
     AnthropicCompletionAdapter,
 )
-from template_project.infrastructure.clients.example_client import ExampleClient
-from template_project.infrastructure.observability.logging_metrics_adapter import (
+from agents_who_mean_well.infrastructure.clients.example_client import ExampleClient
+from agents_who_mean_well.infrastructure.observability.logging_metrics_adapter import (
     LoggingMetricsAdapter,
 )
-from template_project.presentation.user.context_var_current_user_adapter import (
+from agents_who_mean_well.presentation.user.context_var_current_user_adapter import (
     ContextVarCurrentUserAdapter,
 )
 

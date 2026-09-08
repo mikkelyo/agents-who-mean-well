@@ -11,16 +11,16 @@ from fastapi import FastAPI, Request, Response
 from fastapi.middleware.cors import CORSMiddleware
 
 from config import settings
-from template_project.constants.context_keys import ContextKeys
-from template_project.context import context
-from template_project.di_container import container
-from template_project.infrastructure.logging.logger_factory import configure_logging
-from template_project.presentation.api import register_exception_handlers, router
+from agents_who_mean_well.constants.context_keys import ContextKeys
+from agents_who_mean_well.context import context
+from agents_who_mean_well.di_container import container
+from agents_who_mean_well.infrastructure.logging.logger_factory import configure_logging
+from agents_who_mean_well.presentation.api import register_exception_handlers, router
 
 configure_logging(level=settings.log_level)
 logger = container.infrastructure.logger()
 
-APP_NAME = getenv("APP_NAME", "template_project")
+APP_NAME = getenv("APP_NAME", "agents_who_mean_well")
 REQUEST_ID_HEADER = "X-Request-Id"
 
 

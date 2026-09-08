@@ -3,7 +3,7 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "template-project"
+name = "agents_who_mean_well"
 version = "1.0.0"
 description = "A Python project template following ports and adapters"
 requires-python = ">=3.11"
@@ -28,7 +28,7 @@ dev = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["template_project"]
+packages = ["agents_who_mean_well"]
 
 [tool.black]
 line-length = 88
@@ -52,7 +52,7 @@ disallow_untyped_defs = false
 
 # House style annotates enum members; mypy rejects that but Python accepts it.
 [[tool.mypy.overrides]]
-module = "template_project.domain.enums.*"
+module = "agents_who_mean_well.domain.enums.*"
 disable_error_code = ["misc"]
 
 [[tool.mypy.overrides]]
@@ -61,11 +61,11 @@ ignore_missing_imports = true
 
 # dependency-injector cannot express Protocol dependencies or nested containers.
 [[tool.mypy.overrides]]
-module = "template_project.di_container"
+module = "agents_who_mean_well.di_container"
 disable_error_code = ["type-abstract", "assignment"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 asyncio_mode = "auto"
 asyncio_default_fixture_loop_scope = "function"
-addopts = "--cov=template_project --cov-report=term-missing"
+addopts = "--cov=agents_who_mean_well --cov-report=term-missing"

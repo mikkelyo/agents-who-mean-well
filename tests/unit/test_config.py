@@ -16,4 +16,4 @@ class TestSettings:
         """Environment-scoped names must never reach an adapter unresolved."""
         assert settings.app_env_name == "test"
         assert settings.example_api_config.base_url == "https://api.test.example.com"
-        assert settings.metrics_config.namespace == "test.template_project"
+        assert settings.metrics_config.namespace == "test.agents_who_mean_well"

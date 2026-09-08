@@ -1,4 +1,4 @@
-# template-project
+# agents_who_mean_well
 
 A Python service template built as **ports and adapters** (clean architecture):
 FastAPI at the edge, use cases in the middle, vendor SDKs at the rim, and a single
@@ -52,7 +52,7 @@ config.py                     composition root: Dynaconf -> Pydantic `settings`
 settings.json                 non-secret configuration (committed)
 conftest.py                   sets required env vars before `config` is imported
 scripts/rename_project.py     one-shot rename when cloning this template
-template_project/
+agents_who_mean_well/
 ├── di_container.py           composition root: all wiring
 ├── context.py                ContextVar registry for request-scoped state
 ├── constants/                frozen strings: context keys, user-facing messages
