@@ -1,0 +1,1 @@
+"""Shared response DTO bases."""

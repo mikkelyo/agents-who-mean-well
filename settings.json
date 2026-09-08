@@ -1,0 +1,26 @@
+{
+  "version": "1.0.0",
+  "is_local": true,
+  "log_level": "INFO",
+  "completion_config": {
+    "system_prompt": "You are a helpful assistant."
+  },
+  "anthropic_config": {
+    "model": "claude-sonnet-4-6",
+    "max_tokens": 4096,
+    "temperature": 0.7,
+    "timeout_seconds": 60.0,
+    "max_retries": 2
+  },
+  "metrics_config": {
+    "namespace": "{env_name}.template_project",
+    "enabled": true
+  },
+  "security_config": {
+    "allowed_origins": ["*"]
+  },
+  "example_api_config": {
+    "base_url": "https://api.{env_name}.example.com",
+    "timeout_seconds": 10.0
+  }
+}
