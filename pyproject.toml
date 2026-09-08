@@ -12,7 +12,7 @@ dependencies = [
     "pyyaml>=6.0",
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
     "pytest>=8.4",
     "pytest-asyncio>=1.0",

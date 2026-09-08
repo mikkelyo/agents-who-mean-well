@@ -16,7 +16,7 @@ vllm serve Qwen/Qwen2.5-Coder-7B-Instruct-AWQ \
 Then run both arms and compare:
 
 ```bash
-uv sync --extra dev
+uv sync
 uv run python scripts/run.py configs/baseline.yaml   # null policy = naive pass@k
 uv run python scripts/run.py configs/adaptive.yaml   # needs the stubs implemented
 uv run python scripts/eval.py
