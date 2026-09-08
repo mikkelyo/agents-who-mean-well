@@ -1,0 +1,11 @@
+# Treatment: same total token budget, spent adaptively and with shared insight.
+name: adaptive
+model: Qwen/Qwen2.5-Coder-7B-Instruct-AWQ
+base_url: http://localhost:8000
+max_concurrency: 16
+token_budget_per_task: 20000
+max_rounds: 8
+max_tokens: 1024
+temperature: 0.8
+reallocate: true
+share_insight: true

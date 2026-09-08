@@ -1,10 +1,6 @@
 # Development directories
 dev/
 
-# Secrets
-.secrets
-.secrets.json
-
 # Python
 __pycache__/
 *.py[cod]
@@ -58,3 +54,6 @@ htmlcov/
 # Type checker and linter caches
 .mypy_cache/
 .ruff_cache/
+# Experiment output and datasets
+runs/
+data/*.jsonl
