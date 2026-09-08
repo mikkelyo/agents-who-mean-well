@@ -35,6 +35,9 @@ uv run mypy .
 ```
 
 ## Conventions
+- Answers are ultra-concise: fewest words that carry the information. No
+  comparison tables, no recaps of what's already established, no surveying
+  options I'm not recommending. Lead with the answer.
 - Line length 88. Docstrings are one line. Signatures are typed — never restate
   parameters or returns in prose.
 - Keep it simple. Prefer clarity over cleverness, no premature abstraction.
